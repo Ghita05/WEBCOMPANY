@@ -3,51 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Strategix Consulting</title>
+  <title>Contact | Smart Consult</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <h1>Strategix Consulting</h1>
-      <p>Your partner in branding, financing, and investing</p>
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Smart Consult</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="branding.html">Branding</a>
+        <a href="financing.html">Financing</a>
+        <a href="investing.html">Investing</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="branding.html">Branding</a></li>
-        <li><a href="financing.html">Financing</a></li>
-        <li><a href="investing.html">Investing</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main class="page-content">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you! Fill out the form or reach out directly using the contact info below.</p>
+  <section class="hero-small">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Let’s work together to grow your business.</p>
+    </div>
+  </section>
 
-    <form action="#" method="post">
-      <label for="name">Your Name:</label><br/>
-      <input type="text" id="name" name="name" required /><br/><br/>
+  <section class="content-section container">
+    <h3>Contact Us</h3>
+    <p>Have a question or want to book a consultation? Fill out the form below or reach out through our contact details.</p>
 
-      <label for="email">Your Email:</label><br/>
-      <input type="email" id="email" name="email" required /><br/><br/>
+    <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-      <label for="message">Message:</label><br/>
-      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
       <button type="submit">Send Message</button>
     </form>
 
-    <p>Email: info@strategix.com</p>
-    <p>Phone: +1 (555) 123-4567</p>
-    <p>Address: 123 Innovation Drive, Tech City, TX</p>
-  </main>
+    <div class="contact-info">
+      <p><strong>Email:</strong> info@smartconsult.com</p>
+      <p><strong>Phone:</strong> +212 6 12 34 56 78</p>
+      <p><strong>Address:</strong> 123 Business Street, Casablanca, Morocco</p>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Strategix Consulting. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Smart Consult. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
