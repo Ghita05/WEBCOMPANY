@@ -7,6 +7,76 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        nav ul li a.active {
+            color: #ff9f00;
+        }
+        .hero {
+            background-image: url('https://cdn.corporatefinanceinstitute.com/assets/income-investing-1024x576.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 2em;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .content h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .content img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,7 +91,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero service-hero" data-aos="fade-up">
+    <section class="hero" data-aos="fade-up">
         <h1>Investing Consulting</h1>
         <p>Expert strategies for managing and growing your investments.</p>
     </section>
@@ -32,7 +102,7 @@
         <p>
             At WEBCOMPANY, we offer comprehensive investment consulting to help you make informed decisions and achieve your financial goals. Our investment strategies are tailored to individual needs, whether you're looking to invest in stocks, real estate, or alternative assets.
         </p>
-        <img src="https://via.placeholder.com/800x500" alt="Investing" class="service-image">
+        <img src="https://cdn.corporatefinanceinstitute.com/assets/income-investing-1024x576.jpeg" alt="Investing">
         <h3>What We Offer:</h3>
         <ul>
             <li>Customized investment strategies for diverse asset classes.</li>

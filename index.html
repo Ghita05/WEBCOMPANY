@@ -7,6 +7,80 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        nav ul li a.active {
+            color: #ff9f00;
+        }
+        .hero {
+            background-image: url('https://images.pexels.com/photos/8441784/pexels-photo-8441784.jpeg?cs=srgb&dl=pexels-kampus-production-8441784.jpg&fm=jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 2em;
+            transition: all 0.3s ease;
+        }
+        .hero h1 {
+            font-size: 3em;
+            font-weight: 600;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .about {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .about h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -29,12 +103,9 @@
     <!-- About Section -->
     <section class="about" data-aos="fade-up">
         <h2>About Us</h2>
-        <div class="about-content">
-            <img src="https://via.placeholder.com/600x400" alt="Company Image" class="about-image">
-            <p>
-                At WEBCOMPANY, we provide expert consulting in three core areas: Investing, Financing, and Branding. Our team of seasoned professionals is dedicated to helping businesses and individuals achieve financial growth and establish powerful brands.
-            </p>
-        </div>
+        <p>
+            At WEBCOMPANY, we provide expert consulting in three core areas: Investing, Financing, and Branding. Our team of seasoned professionals is dedicated to helping businesses and individuals achieve financial growth and establish powerful brands. 
+        </p>
     </section>
 
     <!-- Footer -->
