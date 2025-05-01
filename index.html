@@ -2,60 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebCompany</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEBCOMPANY Consulting</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <a href="#" class="logo">WebCompany</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="investing.html">Investing</a>
+      <a href="financing.html">Financing</a>
+      <a href="branding.html">Branding</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <div class="hero">
+      <h1>Empowering Your Business Growth</h1>
+      <p>Expert consulting in investing, financing, and branding.</p>
+      <a href="#services" class="btn">Our Services</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to WebCompany</h1>
-    <p>Your solution for web development</p>
-    <a href="#contact" class="btn">Get in Touch</a>
-  </section>
-
-  <section id="about" class="section fade-in">
-    <h2>About Us</h2>
-    <p>We are a team of passionate developers...</p>
-  </section>
-
-  <section id="services" class="section fade-in">
-    <h2>Our Services</h2>
-    <div class="services">
+  <section id="services">
+    <h2>Our Expertise</h2>
+    <div class="services-grid">
       <div class="service-card">
-        <h3>Web Design</h3>
-        <p>Creating responsive and modern designs.</p>
+        <h3>Investing</h3>
+        <p>Strategic investment planning to maximize returns.</p>
+        <a href="investing.html">Learn More</a>
       </div>
       <div class="service-card">
-        <h3>Development</h3>
-        <p>Building robust web applications.</p>
+        <h3>Financing</h3>
+        <p>Customized financing solutions for your business needs.</p>
+        <a href="financing.html">Learn More</a>
       </div>
       <div class="service-card">
-        <h3>SEO Optimization</h3>
-        <p>Improving your site's visibility.</p>
+        <h3>Branding</h3>
+        <p>Building a strong brand identity to stand out in the market.</p>
+        <a href="branding.html">Learn More</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section fade-in">
+  <section id="about">
+    <h2>About WEBCOMPANY</h2>
+    <p>At WEBCOMPANY, we specialize in providing top-notch consulting services in investing, financing, and branding. Our mission is to empower businesses to achieve their full potential through strategic guidance and innovative solutions.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"WEBCOMPANY transformed our brand and helped us secure the funding we needed. Their expertise is unmatched."</p>
+      <cite>— Jane Doe, CEO of XYZ Corp</cite>
+    </div>
+    <!-- Add more testimonials as needed -->
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
     <form>
-      <!-- Contact form fields -->
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 WebCompany. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2025 WEBCOMPANY Consulting. All rights reserved.</p>
   </footer>
 
   <script src="scripts.js"></script>
