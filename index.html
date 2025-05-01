@@ -2,75 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WEBCOMPANY Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBCOMPANY | Consulting Services</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="investing.html">Investing</a>
-      <a href="financing.html">Financing</a>
-      <a href="branding.html">Branding</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar">
+      <div class="logo">WEBCOMPANY</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="investing.html">Investing</a></li>
+        <li><a href="financing.html">Financing</a></li>
+        <li><a href="branding.html">Branding</a></li>
+      </ul>
     </nav>
-    <div class="hero">
-      <h1>Empowering Your Business Growth</h1>
-      <p>Expert consulting in investing, financing, and branding.</p>
-      <a href="#services" class="btn">Our Services</a>
-    </div>
   </header>
 
-  <section id="services">
-    <h2>Our Expertise</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Investing</h3>
-        <p>Strategic investment planning to maximize returns.</p>
-        <a href="investing.html">Learn More</a>
-      </div>
-      <div class="service-card">
-        <h3>Financing</h3>
-        <p>Customized financing solutions for your business needs.</p>
-        <a href="financing.html">Learn More</a>
-      </div>
-      <div class="service-card">
-        <h3>Branding</h3>
-        <p>Building a strong brand identity to stand out in the market.</p>
-        <a href="branding.html">Learn More</a>
-      </div>
+  <section class="hero" data-aos="fade-up">
+    <h1>Your Business. Our Expertise.</h1>
+    <p>Strategic consulting in Investing, Financing, and Branding — tailored to help your business grow smarter.</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </section>
+
+  <section id="services" class="services">
+    <div class="service" data-aos="fade-right">
+      <h2>Investing</h2>
+      <p>Get expert investment planning to scale your assets strategically.</p>
+      <a href="investing.html" class="btn-secondary">Learn More</a>
     </div>
-  </section>
-
-  <section id="about">
-    <h2>About WEBCOMPANY</h2>
-    <p>At WEBCOMPANY, we specialize in providing top-notch consulting services in investing, financing, and branding. Our mission is to empower businesses to achieve their full potential through strategic guidance and innovative solutions.</p>
-  </section>
-
-  <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>"WEBCOMPANY transformed our brand and helped us secure the funding we needed. Their expertise is unmatched."</p>
-      <cite>— Jane Doe, CEO of XYZ Corp</cite>
+    <div class="service" data-aos="fade-up">
+      <h2>Financing</h2>
+      <p>Find optimal funding solutions and structure your finances efficiently.</p>
+      <a href="financing.html" class="btn-secondary">Learn More</a>
     </div>
-    <!-- Add more testimonials as needed -->
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="service" data-aos="fade-left">
+      <h2>Branding</h2>
+      <p>Build a brand that resonates and stands out in a competitive market.</p>
+      <a href="branding.html" class="btn-secondary">Learn More</a>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 WEBCOMPANY Consulting. All rights reserved.</p>
+    <p>&copy; 2025 WEBCOMPANY. All rights reserved.</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
