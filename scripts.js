@@ -1,44 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.section');
-  
-    const options = {
-      threshold: 0.1
-    };
-  
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-  
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
-  // Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
+// Initialize AOS (Animate on Scroll) for scroll animations
+AOS.init({
+    duration: 1000, // Animation duration (in ms)
+    once: true, // Only animate once when the element is in view
+    offset: 200, // Offset to trigger the animation earlier or later
   });
   
-  // Simple form validation
-  const form = document.querySelector('form');
-  form.addEventListener('submit', function(e) {
-    const name = form.querySelector('input[type="text"]').value;
-    const email = form.querySelector('input[type="email"]').value;
-    const message = form.querySelector('textarea').value;
+  // Highlight active navigation links based on the current page
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const currentPage = window.location.pathname.split('/').pop(); // Get the current page name
   
-    if (!name || !email || !message) {
-      e.preventDefault();
-      alert('Please fill in all fields.');
+  navLinks.forEach(link => {
+    // Add 'active' class to the link matching the current page
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
     }
   });
-  // Initialize AOS animations
-AOS.init();
+  
+  // Smooth scrolling behavior for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  });
+  
