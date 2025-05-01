@@ -40,4 +40,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       alert('Please fill in all fields.');
     }
   });
-  
+  // Initialize AOS animations
+AOS.init();

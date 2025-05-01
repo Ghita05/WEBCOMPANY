@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WEBCOMPANY | Consulting Services</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulting Services in Investing, Financing, and Branding.">
+    <title>WEBCOMPANY - Consulting Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">WEBCOMPANY</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="investing.html">Investing</a></li>
-        <li><a href="financing.html">Financing</a></li>
-        <li><a href="branding.html">Branding</a></li>
-      </ul>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="investing.html">Investing</a></li>
+            <li><a href="financing.html">Financing</a></li>
+            <li><a href="branding.html">Branding</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <section class="hero" data-aos="fade-up">
-    <h1>Your Business. Our Expertise.</h1>
-    <p>Strategic consulting in Investing, Financing, and Branding — tailored to help your business grow smarter.</p>
-    <a href="#services" class="btn">Explore Services</a>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <h1>Welcome to WEBCOMPANY</h1>
+        <p>Your trusted partner for Investing, Financing, and Branding Consulting.</p>
+        <a href="investing.html" class="cta-button">Discover Our Services</a>
+    </section>
 
-  <section id="services" class="services">
-    <div class="service" data-aos="fade-right">
-      <h2>Investing</h2>
-      <p>Get expert investment planning to scale your assets strategically.</p>
-      <a href="investing.html" class="btn-secondary">Learn More</a>
-    </div>
-    <div class="service" data-aos="fade-up">
-      <h2>Financing</h2>
-      <p>Find optimal funding solutions and structure your finances efficiently.</p>
-      <a href="financing.html" class="btn-secondary">Learn More</a>
-    </div>
-    <div class="service" data-aos="fade-left">
-      <h2>Branding</h2>
-      <p>Build a brand that resonates and stands out in a competitive market.</p>
-      <a href="branding.html" class="btn-secondary">Learn More</a>
-    </div>
-  </section>
+    <!-- Services Section -->
+    <section class="services" data-aos="fade-up">
+        <div class="service-card">
+            <h2>Investing</h2>
+            <p>Empowering your financial future with expert investing strategies.</p>
+            <a href="investing.html">Learn More</a>
+        </div>
+        <div class="service-card">
+            <h2>Financing</h2>
+            <p>Helping you secure the best financing options for your business.</p>
+            <a href="financing.html">Learn More</a>
+        </div>
+        <div class="service-card">
+            <h2>Branding</h2>
+            <p>Building powerful brands that resonate with your audience.</p>
+            <a href="branding.html">Learn More</a>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 WEBCOMPANY. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WEBCOMPANY. All rights reserved.</p>
+    </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000 });
-  </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
