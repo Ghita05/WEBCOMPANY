@@ -3,40 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Consult | Home</title>
+  <title>WebCompany</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">Smart Consult</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="branding.html">Branding</a></li>
-          <li><a href="financing.html">Financing</a></li>
-          <li><a href="investing.html">Investing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">WebCompany</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="overlay"></div>
-    <img src="https://www.jeanlouis-garret.fr/wp-content/uploads/consulting_HD.jpg" alt="Consulting" class="hero-img">
-    <div class="hero-text">
-      <h1>Empowering Your Business Vision</h1>
-      <p>Smart Consult provides expert consulting services in branding, financing, and investing. We guide entrepreneurs and companies toward strategic growth and success.</p>
-      <a href="contact.html" class="cta-button">Get in Touch</a>
+    <h1>Welcome to WebCompany</h1>
+    <p>Your solution for web development</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Us</h2>
+    <p>We are a team of passionate developers...</p>
+  </section>
+
+  <section id="services" class="section fade-in">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Creating responsive and modern designs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Development</h3>
+        <p>Building robust web applications.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO Optimization</h3>
+        <p>Improving your site's visibility.</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container footer-content">
-      <p>&copy; 2025 Smart Consult | contact@smartconsult.com | +212 600-000000</p>
-    </div>
+  <section id="contact" class="section fade-in">
+    <h2>Contact Us</h2>
+    <form>
+      <!-- Contact form fields -->
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 WebCompany. All rights reserved.</p>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
