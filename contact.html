@@ -3,7 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact StratEdge Consulting</title>
+    <title>Contact Us | StratEdge Consulting</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/aos@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        /* Moroccan-inspired color scheme */
+        :root {
+            --primary-color: #2C5E8B; /* Deep blue */
+            --secondary-color: #D4AF37; /* Gold */
+            --accent-color: #C1272D; /* Terracotta red */
+            --dark-color: #1A2E40; /* Dark blue */
+            --light-color: #F5F5F5;
+        }
+
+        /* Team section styles */
+        .team-section {
+            background-color: var(--light-color);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            background-color: rgba(212, 175, 55, 0.1);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+        }
+
+        .team-member h3 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .service-badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Moroccan-inspired contact details */
+        .contact-details {
+            background-color: rgba(44, 94, 139, 0.05);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details i {
+            margin-right: 1rem;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            min-width: 25px;
+        }
+
+        .moroccan-address {
+            font-style: normal;
+            line-height: 1.6;
+        }
+
+        .moroccan-address span {
+            display: block;
+            color: var(--dark-color);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="investing.html">Investing</a></li>
+            <li><a href="financing.html">Financing</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero" data-aos="fade-up">
+        <h1>Our Moroccan Team</h1>
+        <p>Expert consultants serving across Morocco</p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" data-aos="fade-up">
+        <h2>Meet Our Specialists</h2>
+        <p>Our team of experts is ready to assist you with your business needs</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Investment Strategist</h3>
+                <p>Financial Markets Expert</p>
+                <span class="service-badge">Investment Consulting</span>
+                <p class="team-desc">15+ years guiding clients through Moroccan and international markets</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3>Financing Advisor</h3>
+                <p>Capital Solutions Specialist</p>
+                <span class="service-badge">Business Financing</span>
+                <p class="team-desc">Expert in Moroccan banking regulations and funding options</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Brand Consultant</h3>
+                <p>Market Positioning Expert</p>
+                <span class="service-badge">Brand Development</span>
+                <p class="team-desc">Specializing in Moroccan consumer behavior and brand storytelling</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Client Relations</h3>
+                <p>Customer Success Manager</p>
+                <span class="service-badge">All Services</span>
+                <p class="team-desc">Your direct point of contact for all inquiries</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-main" data-aos="fade-up">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Our Moroccan Offices</h2>
+                
+                <div class="contact-details">
+                    <h3>Casablanca Headquarters</h3>
+                    <div class="moroccan-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Angle Boulevard Anoual et Rue Jabal Moussa</span>
+                        <span>2ème étage, Quartier Bourgogne</span>
+                        <span>Casablanca 20250, Morocco</span>
+                    </div>
+                    
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        +212 522 54 87 21
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        contact@stratedge.ma
+                    </p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        Sun-Thu: 8:30 AM - 6:30 PM (GMT+1)
+                    </p>
+                </div>
+                
+                <div class="contact-details">
+                    <h3>Regional Offices</h3>
+                    <p>
+                        <i class="fas fa-city"></i>
+                        <strong>Rabat:</strong> +212 537 72 34 56
+                    </p>
+                    <p>
+                        <i class="fas fa-city"></i>
+                        <strong>Marrakech:</strong> +212 524 43 21 09
+                    </p>
+                    <p>
+                        <i class="fas fa-city"></i>
+                        <strong>Tangier:</strong> +212 539 94 56 78
+                    </p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Contact Our Team</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="investing">Investment Consulting</option>
+                            <option value="financing">Business Financing</option>
+                            <option value="branding">Brand Development</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+212 XXX XXX XXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">Preferred Office Location</label>
+                        <select id="city" name="city">
+                            <option value="">Select location</option>
+                            <option value="casablanca">Casablanca</option>
+                            <option value="rabat">Rabat</option>
+                            <option value="marrakech">Marrakech</option>
+                            <option value="tangier">Tangier</option>
+                            <option value="remote">Remote Consultation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StratEdge Consulting Morocco</h3>
+                <p>Strategic business solutions for the Moroccan market</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>contact@stratedge.ma<br>+212 522 54 87 21</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StratEdge Consulting Morocco. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Form validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const service = document.getElementById('service').value;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            
+            if (!service || !name || !email) {
+                e.preventDefault();
+                alert('Veuillez remplir les champs obligatoires');
+                return false;
+            }
+            
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                e.preventDefault();
+                alert('Veuillez entrer une adresse email valide');
+                return false;
+            }
+            
+            // Form submission handling would go here
+            alert('Merci pour votre message. Nous vous contacterons bientôt.');
+            return true;
+        });
+    </script>
+</body>
+</html>
