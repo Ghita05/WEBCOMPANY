@@ -293,7 +293,7 @@ footer {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 125%;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
@@ -329,13 +329,13 @@ footer {
 }
 
 .flex-section img {
-  width: 55%;
+  width: 70%;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 .text-content {
-  width: 50%;
+  width: 60%;
   font-size: 1rem;
 }
