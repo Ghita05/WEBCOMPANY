@@ -293,12 +293,12 @@ footer {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 125%;
-  left: 100%;
+  left: 150%;
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
   padding: 3px 6px;      /* ⬅️ Smaller padding */
-  border-radius: 3px;     /* ⬅️ Smaller corners */
+  border-radius: 1px;     /* ⬅️ Smaller corners */
   white-space: nowrap;
   font-size: 0.3em;       /* ⬅️ Smaller font */
   opacity: 0;
@@ -338,4 +338,46 @@ footer {
 .text-content {
   width: 60%;
   font-size: 1rem;
+}
+
+
+.portfolio-preview {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio-item {
+  width: 250px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #003366;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.view-all:hover {
+  background-color: #005599;
 }
