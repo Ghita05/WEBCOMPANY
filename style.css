@@ -293,14 +293,14 @@ footer {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 125%;
-  left: 70%;
+  left: 90%;
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
   padding: 3px 6px;      /* ⬅️ Smaller padding */
   border-radius: 3px;     /* ⬅️ Smaller corners */
   white-space: nowrap;
-  font-size: 0.4em;       /* ⬅️ Smaller font */
+  font-size: 0.3em;       /* ⬅️ Smaller font */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
