@@ -348,14 +348,15 @@ footer {
 
 .portfolio-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
+  max-width: 900px; /* Limit the total width */
+  margin: 0 auto;    /* Center the grid container */
 }
 
 .portfolio-item {
-  width: 250px;
+  width: 260px;
   text-align: center;
 }
 
@@ -363,8 +364,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .view-all {
   display: inline-block;
