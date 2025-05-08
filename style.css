@@ -298,9 +298,9 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 3px 6px;      /* ⬅️ Smaller padding */
-  border-radius: 4px;     /* ⬅️ Smaller corners */
+  border-radius: 3px;     /* ⬅️ Smaller corners */
   white-space: nowrap;
-  font-size: 0.7em;       /* ⬅️ Smaller font */
+  font-size: 0.2em;       /* ⬅️ Smaller font */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
@@ -329,7 +329,7 @@ footer {
 }
 
 .flex-section img {
-  width: 45%;
+  width: 55%;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
